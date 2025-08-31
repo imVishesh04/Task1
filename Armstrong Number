@@ -1,0 +1,12 @@
+# Program to check Armstrong Number
+
+num = int(input("Enter a number: "))
+digits = str(num)
+power = len(digits)
+
+sum_of_powers = sum(int(digit) ** power for digit in digits)
+
+if sum_of_powers == num:
+    print(num, "is an Armstrong Number")
+else:
+    print(num, "is Not an Armstrong Number")
